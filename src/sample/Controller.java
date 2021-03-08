@@ -45,7 +45,7 @@ public class Controller {
 
 
     @FXML
-    public void Marcar(ActionEvent event) throws InterruptedException {
+    public void Click(ActionEvent event) throws InterruptedException {
 
         if(partida.getEstado()) {
             bc = (Button) event.getSource();
@@ -135,10 +135,11 @@ public class Controller {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         if(ganador == 0) {
             alert.setTitle("¡VICTORIA!");
-            alert.setHeaderText("¡Enhorabuena jugador 1, has ganado!");
+            alert.setHeaderText("Enhorabuena jugador 1, has ganado");
+
         }else {
             alert.setTitle("¡DERROTA!");
-            alert.setHeaderText("¡Jugador 1, has perdido!");
+            alert.setHeaderText("Jugador 1, has perdido");
         }
         alert.getButtonTypes().setAll(ButtonType.CLOSE);
         alert.showAndWait();

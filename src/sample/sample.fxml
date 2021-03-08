@@ -18,47 +18,47 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Marcar" prefHeight="0.0" prefWidth="0.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Click" prefHeight="0.0" prefWidth="0.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b1" fx:id="b1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="89.0" prefWidth="198.0" GridPane.columnIndex="1">
+                <Button id="b1" fx:id="b1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="89.0" prefWidth="198.0" GridPane.columnIndex="1">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b2" fx:id="b2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2">
+                <Button id="b2" fx:id="b2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b3" fx:id="b3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="208.0" prefWidth="267.0" GridPane.rowIndex="1">
+                <Button id="b3" fx:id="b3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="208.0" prefWidth="267.0" GridPane.rowIndex="1">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b4" fx:id="b4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <Button id="b4" fx:id="b4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b5" fx:id="b5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="151.0" prefWidth="255.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <Button id="b5" fx:id="b5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="151.0" prefWidth="255.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b6" fx:id="b6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="94.0" prefWidth="60.0" GridPane.rowIndex="2">
+                <Button id="b6" fx:id="b6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="94.0" prefWidth="60.0" GridPane.rowIndex="2">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b7" fx:id="b7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <Button id="b7" fx:id="b7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <font>
                         <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="b8" fx:id="b8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <Button id="b8" fx:id="b8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                     <font>
                         <Font size="35.0" />
                     </font>
@@ -92,7 +92,7 @@
                                         <Pane layoutY="-1.0" prefHeight="160.0" prefWidth="296.0">
                                             <children>
                                                 <TextArea id="Winsplayer2" fx:id="Winsplayer2" editable="false" layoutX="40.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
-                                                <TextArea id="Losesplayer2" fx:id="Losesjugador2" editable="false" layoutX="40.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
+                                                <TextArea id="Losesplayer2" fx:id="Losesplayer2" editable="false" layoutX="40.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
                                                 <Text layoutX="40.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORIAS" />
                                                 <Text layoutX="40.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DERROTAS" />
                                             </children>
