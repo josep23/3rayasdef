@@ -14,17 +14,17 @@ import java.util.Optional;
 public class Controller {
     private static Partida partida = new Partida();
     @FXML Button button_empezar_partida;
-    @FXML TextArea WINPLAYER1;
-    @FXML TextArea WINPLAYER2;
-    @FXML TextArea LOSESPLAYER1;
-    @FXML TextArea LOSESPLAYER2;
+    @FXML TextArea Winsplayer1;
+    @FXML TextArea Winsplayer2;
+    @FXML TextArea Losesplayer1;
+    @FXML TextArea Losesplayer2;
     @FXML Text textoplayer1, textoplayer2;
-    @FXML Button boton0,boton1,boton2,boton3,boton4,boton5,boton6,boton7,boton8,botonc;
+    @FXML Button b0, b1, b2, b3, b4, b5, b6, b7, b8,bc;
     @FXML Button[] listabotones = new Button[8];
     @FXML
     public void Empezar_Partida(ActionEvent event) {
         button_empezar_partida = (Button) event.getSource();
-        listabotones = new Button[]{boton0, boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8};
+        listabotones = new Button[]{b0, b1, b2, b3, b4, b5, b6, b7, b8};
 
         partida.setModo(Elige_Modo());
 
@@ -32,11 +32,6 @@ public class Controller {
         if(partida.getModo() != null) {
             if(partida.getModo().equals("VSHumano")) {
                 partida.EmpezarPartida();
-                if(partida.getTurno()==0) {
-                    MostrarTurno(textoplayer1);
-                }else {
-                    MostrarTurno(textoplayer2);
-                }
                 OcultarBoton(button_empezar_partida);
             }else {
                     partida.EmpezarPartida();
@@ -52,17 +47,16 @@ public class Controller {
     @FXML
     public void Marcar(ActionEvent event) throws InterruptedException {
 
-        //Si hemos inicado la partida, podremos marcar.
         if(partida.getEstado()) {
-            botonc = (Button) event.getSource();
-            String sid = botonc.getId().replaceAll("[b]","");
+            bc = (Button) event.getSource();
+            String sid = bc.getId().replaceAll("[b]","");
             int id =Integer.valueOf(sid);
             char[] cuadricula = partida.getTabla();
             partida.PropiedadesTurno();
 
             //Si la casilla NO está marcada, podremos marcarla.
             if(partida.EstadoCuadricula(cuadricula[id])) {
-                botonc.setText(partida.getValue());
+                bc.setText(partida.getValue());
                 partida.setPosCuadricula(id,partida.getValue().charAt(0));
 
                 //Comprobamos si se dan las condiciones de Victoria.
@@ -72,7 +66,7 @@ public class Controller {
                     partida.FinalizarPartida();
                 }else {
                     if(partida.CuadriculaLLena()) {
-                        Anunciar_Empate();
+                        Empate();
                         Restart();
                         partida.FinalizarPartida();
                     }
@@ -95,7 +89,7 @@ public class Controller {
      * y eligiendo movimiento a realizar segun dificultad elegida.*/
     private void TurnoCOM(char[] cuadricula) {
         partida.PropiedadesTurno();
-        IAFacil(cuadricula);
+        Ia(cuadricula);
 
         if(partida.getEstado()) {
             if(partida.getModo().equals("ComVSCom")) {
@@ -137,7 +131,7 @@ public class Controller {
         return modo;
     }
 
-    public  static void Anunciar_Ganador(int ganador) {
+    public  static void Ganador(int ganador) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         if(ganador == 0) {
             alert.setTitle("¡VICTORIA!");
@@ -150,8 +144,7 @@ public class Controller {
         alert.showAndWait();
     }
 
-    //Alerta mostrada al empatar.
-    public  static void Anunciar_Empate() {
+    public  static void Empate() {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("¡EMPATE!");
         alert.setHeaderText("¡Ningun jugador ha logrado ganar al otro!");
@@ -159,10 +152,8 @@ public class Controller {
         alert.showAndWait();
     }
 
-    /*Método que se encarga del comportamiento de COM cuando su IA es fácil.
-     * La asignación de casilla es aleatoria, siempre y cuando no esté ocupada.
-     * */
-    private void IAFacil(char[] cuadricula) {
+
+    private void Ia(char[] cuadricula) {
         int random;
         do{
             random = (int) (Math.random()*10-1);
@@ -175,7 +166,7 @@ public class Controller {
             partida.FinalizarPartida();
         }else {
             if(partida.CuadriculaLLena()) {
-                Anunciar_Empate();
+                Empate();
                 Restart();
                 partida.FinalizarPartida();
             }
@@ -191,19 +182,12 @@ public class Controller {
         button.styleProperty().setValue("Visibility: true");
     }
 
-    private void MostrarTurno(Text tj) {
-        tj.styleProperty().setValue("Visibility:true");
-    }
 
-    private void OcultarTurno(Text tj) {
-        tj.styleProperty().setValue("Visibility: false");
-    }
-
-    private void RefrescarMarcador(Partida partida,TextArea vj1,TextArea vj2,TextArea dj1,TextArea dj2) {
-        vj1.setText(String.valueOf(partida.getWINSPLAYER1()));
-        vj2.setText(String.valueOf(partida.getWINSPLAYER2()));
-        dj1.setText(String.valueOf(partida.getLOSESPLAYER1()));
-        dj2.setText(String.valueOf(partida.getLOSESPLAYER2()));
+    private void RefrescarMarcador(Partida partida, TextArea Winsplayer1, TextArea Winsplayer2, TextArea Losesplayer1, TextArea Losesplayer2) {
+        Winsplayer1.setText(String.valueOf(partida.getWinsplayer1()));
+        Winsplayer2.setText(String.valueOf(partida.getWinsplayer2()));
+        Losesplayer1.setText(String.valueOf(partida.getLosesplayer1()));
+        Losesplayer2.setText(String.valueOf(partida.getLosesplayer2()));
     }
 
     private void Limpiar() {
@@ -212,17 +196,13 @@ public class Controller {
         }
     }
     private void Restart() {
-        RefrescarMarcador(partida, WINPLAYER1, WINPLAYER2, LOSESPLAYER1, LOSESPLAYER2);
-        OcultarTurno(textoplayer1);
-        OcultarTurno(textoplayer2);
+        RefrescarMarcador(partida, Winsplayer1, Winsplayer2, Losesplayer1, Losesplayer2);
         MostrarBoton(button_empezar_partida);
         Limpiar();
     }
 
-    //Método que se encarga de setear los turnos.
+    //Comprueba los turnos
     private void SetTurno(int turno,Text turnoOcultar, Text turnoMostrar) {
         partida.setTurno(turno);
-        OcultarTurno(turnoOcultar);
-        MostrarTurno(turnoMostrar);
     }
 }

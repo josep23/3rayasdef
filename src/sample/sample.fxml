@@ -6,65 +6,66 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <GridPane alignment="TOP_CENTER" gridLinesVisible="true" layoutX="3081.0" layoutY="213.0" prefHeight="175.0" prefWidth="890.0" style="-fx-border-color: black; -fx-border-width: 2px;" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="3081.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="213.0">
-            <columnConstraints>
-                <ColumnConstraints />
-                <ColumnConstraints />
-                <ColumnConstraints />
-                <ColumnConstraints />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints />
-                <RowConstraints prefHeight="30.0" vgrow="ALWAYS" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
-            </rowConstraints>
-            <children>
-                <Button id="boton0" fx:id="boton0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Marcar" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+      <GridPane AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="100.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Marcar" prefHeight="0.0" prefWidth="0.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton4" fx:id="boton4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <Button id="b1" fx:id="b1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="89.0" prefWidth="198.0" GridPane.columnIndex="1">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton3" fx:id="boton3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="208.0" prefWidth="267.0" GridPane.rowIndex="2">
+                <Button id="b2" fx:id="b2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton1" fx:id="boton1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="89.0" prefWidth="198.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <Button id="b3" fx:id="b3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="208.0" prefWidth="267.0" GridPane.rowIndex="1">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton6" fx:id="boton6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="151.0" prefWidth="0.0" GridPane.rowIndex="2">
+                <Button id="b4" fx:id="b4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton7" fx:id="boton7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <Button id="b5" fx:id="b5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="151.0" prefWidth="255.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton2" fx:id="boton2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <Button id="b6" fx:id="b6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="94.0" prefWidth="60.0" GridPane.rowIndex="2">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton5" fx:id="boton5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="151.0" prefWidth="255.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                <Button id="b7" fx:id="b7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <font>
-                        <Font size="70.0" />
+                        <Font size="35.0" />
                     </font>
                 </Button>
-                <Button id="boton8" fx:id="boton8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                <Button id="b8" fx:id="b8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Marcar" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
                 </Button>
-            </children>
-        </GridPane>
-        <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="546.0" prefWidth="371.0" AnchorPane.leftAnchor="4000.0">
+         </children>
+      </GridPane>
+        <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="546.0" prefWidth="371.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                     <children>
@@ -76,11 +77,6 @@
                                         <TextArea id="Losesplayer1" fx:id="Losesplayer1" editable="false" layoutX="40.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
                                         <Text layoutX="40.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORIAS" />
                                         <Text layoutX="40.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DERROTAS" />
-                                        <Text id="textoplayer1" fx:id="textoplayer1" layoutX="40.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: no;" text="TURNO JUGADOR 1" wrappingWidth="162.55078125">
-                                            <font>
-                                                <Font size="18.0" />
-                                            </font>
-                                        </Text>
                                     </children>
                                 </Pane>
                             </content>
@@ -95,17 +91,12 @@
                                     <children>
                                         <Pane layoutY="-1.0" prefHeight="160.0" prefWidth="296.0">
                                             <children>
+                                                <TextArea id="Winsplayer2" fx:id="Winsplayer2" editable="false" layoutX="40.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
                                                 <TextArea id="Losesplayer2" fx:id="Losesjugador2" editable="false" layoutX="40.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
                                                 <Text layoutX="40.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORIAS" />
                                                 <Text layoutX="40.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DERROTAS" />
                                             </children>
                                         </Pane>
-                                        <TextArea id="Winsplayer2" fx:id="Winsplayer2" editable="false" layoutX="40.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="0" />
-                                        <Text id="textoplayer2" fx:id="textoplayer2" layoutX="40.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: no;" text="TURNO JUGADOR 2" wrappingWidth="162.55078125">
-                                            <font>
-                                                <Font size="18.0" />
-                                            </font>
-                                        </Text>
                                     </children>
                                 </AnchorPane>
                             </content>
@@ -114,19 +105,11 @@
                 </AnchorPane>
             </items>
         </SplitPane>
-        <SplitPane dividerPositions="0.5" orientation="VERTICAL">
-            <items>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="JUEGO DE 3 EN RAYA" textAlignment="CENTER">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Text>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="451.0" SplitPane.resizableWithParent="false">
-                    <children>
-                        <Button id="empezar_partida" fx:id="boton_empezar_partida" layoutX="235.0" layoutY="19.0" mnemonicParsing="false" onAction="#Empezar_Partida" text="EMPEZAR PARTIDA" />
-                    </children>
-                </AnchorPane>
-            </items>
-        </SplitPane>
+          <Text layoutY="21.58203125" strokeType="OUTSIDE" strokeWidth="0.0" text="JUEGO DE 3 EN RAYA" textAlignment="CENTER">
+              <font>
+                  <Font name="System Bold" size="20.0" />
+              </font>
+          </Text>
+            <Button id="empezar_partida" fx:id="boton_empezar_partida" layoutX="235.0" layoutY="19.0" mnemonicParsing="false" onAction="#Empezar_Partida" text="EMPEZAR PARTIDA" />
     </children>
 </AnchorPane>

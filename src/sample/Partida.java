@@ -1,15 +1,15 @@
 package sample;
 
-import static sample.Controller.Anunciar_Ganador;
+import static sample.Controller.Ganador;
 
 public class Partida {
 
     private static String ia;
     private static String modo;
-    private static int WINSPLAYER1;
-    private static int WINSPLAYER2;
-    private static int LOSESPLAYER1;
-    private static int LOSESPLAYER2;
+    private static int Winsplayer1;
+    private static int Winsplayer2;
+    private static int Losesplayer1;
+    private static int Losesplayer2;
     private int turno =0;
     private char[] Tabla = new char[9];
     private static boolean Empezar = false;
@@ -23,20 +23,20 @@ public class Partida {
         Partida.modo = modo;
     }
 
-    public static void setWINSPLAYER1(int WINSPLAYER1) {
-        Partida.WINSPLAYER1 = WINSPLAYER1;
+    public static void setWinsplayer1(int winsplayer1) {
+        Partida.Winsplayer1 = winsplayer1;
     }
 
-    public static void setWINSPLAYER2(int WINSPLAYER2) {
-        Partida.WINSPLAYER2 = WINSPLAYER2;
+    public static void setWinsplayer2(int winsplayer2) {
+        Partida.Winsplayer2 = winsplayer2;
     }
 
-    public static void setLOSESPLAYER1(int LOSESPLAYER1) {
-        Partida.LOSESPLAYER1 = LOSESPLAYER1;
+    public static void setLosesplayer1(int losesplayer1) {
+        Partida.Losesplayer1 = losesplayer1;
     }
 
-    public static void setLOSESPLAYER2(int LOSESPLAYER2) {
-        Partida.LOSESPLAYER2 = LOSESPLAYER2;
+    public static void setLosesplayer2(int losesplayer2) {
+        Partida.Losesplayer2 = losesplayer2;
     }
 
     public void setTabla(char[] tabla) {
@@ -60,20 +60,20 @@ public class Partida {
         return modo;
     }
 
-    public static int getWINSPLAYER1() {
-        return WINSPLAYER1;
+    public static int getWinsplayer1() {
+        return Winsplayer1;
     }
 
-    public static int getWINSPLAYER2() {
-        return WINSPLAYER2;
+    public static int getWinsplayer2() {
+        return Winsplayer2;
     }
 
-    public static int getLOSESPLAYER1() {
-        return LOSESPLAYER1;
+    public static int getLosesplayer1() {
+        return Losesplayer1;
     }
 
-    public static int getLOSESPLAYER2() {
-        return LOSESPLAYER2;
+    public static int getLosesplayer2() {
+        return Losesplayer2;
     }
 
     public char[] getTabla() {
@@ -123,13 +123,13 @@ public class Partida {
 
     public static void AnunciarGanador(char value) {
         if(value == 'X') {
-            Anunciar_Ganador(0);
-            WINSPLAYER1 = WINSPLAYER1 +1;
-            LOSESPLAYER1 = LOSESPLAYER1 +1;
+            Ganador(0);
+            Winsplayer1 = Winsplayer1 +1;
+            Losesplayer1 = Losesplayer1 +1;
         }else {
-            Anunciar_Ganador(1);
-            WINSPLAYER2 = WINSPLAYER2 +1;
-            LOSESPLAYER1 = LOSESPLAYER1 +1;
+            Ganador(1);
+            Winsplayer2 = Winsplayer2 +1;
+            Losesplayer1 = Losesplayer1 +1;
         }
     }
 
