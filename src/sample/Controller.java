@@ -18,13 +18,13 @@ public class Controller {
     @FXML TextArea WINPLAYER2;
     @FXML TextArea LOSESPLAYER1;
     @FXML TextArea LOSESPLAYER2;
-    @FXML Text tj1,tj2;
-    @FXML Button b0,b1,b2,b3,b4,b5,b6,b7,b8,bc;
+    @FXML Text textoplayer1, textoplayer2;
+    @FXML Button boton0,boton1,boton2,boton3,boton4,boton5,boton6,boton7,boton8,botonc;
     @FXML Button[] listabotones = new Button[8];
     @FXML
     public void Empezar_Partida(ActionEvent event) {
         button_empezar_partida = (Button) event.getSource();
-        listabotones = new Button[]{b0, b1, b2, b3, b4, b5, b6, b7, b8};
+        listabotones = new Button[]{boton0, boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8};
 
         partida.setModo(Elige_Modo());
 
@@ -33,9 +33,9 @@ public class Controller {
             if(partida.getModo().equals("VSHumano")) {
                 partida.EmpezarPartida();
                 if(partida.getTurno()==0) {
-                    MostrarTurno(tj1);
+                    MostrarTurno(textoplayer1);
                 }else {
-                    MostrarTurno(tj2);
+                    MostrarTurno(textoplayer2);
                 }
                 OcultarBoton(button_empezar_partida);
             }else {
@@ -54,15 +54,15 @@ public class Controller {
 
         //Si hemos inicado la partida, podremos marcar.
         if(partida.getEstado()) {
-            bc = (Button) event.getSource();
-            String sid = bc.getId().replaceAll("[b]","");
+            botonc = (Button) event.getSource();
+            String sid = botonc.getId().replaceAll("[b]","");
             int id =Integer.valueOf(sid);
             char[] cuadricula = partida.getTabla();
             partida.PropiedadesTurno();
 
             //Si la casilla NO está marcada, podremos marcarla.
             if(partida.EstadoCuadricula(cuadricula[id])) {
-                bc.setText(partida.getValue());
+                botonc.setText(partida.getValue());
                 partida.setPosCuadricula(id,partida.getValue().charAt(0));
 
                 //Comprobamos si se dan las condiciones de Victoria.
@@ -78,9 +78,9 @@ public class Controller {
                     }
                     else {
                         if(partida.getTurno() == 0) {
-                            SetTurno(1,tj1,tj2);
+                            SetTurno(1, textoplayer1, textoplayer2);
                         }else {
-                            SetTurno(0,tj2,tj1);
+                            SetTurno(0, textoplayer2, textoplayer1);
                         }
                     }
                 }
@@ -100,13 +100,13 @@ public class Controller {
         if(partida.getEstado()) {
             if(partida.getModo().equals("ComVSCom")) {
                 if(partida.getTurno()==0) {
-                    SetTurno(1,tj1,tj2);
+                    SetTurno(1, textoplayer1, textoplayer2);
                 }else {
-                    SetTurno(0,tj2,tj1);
+                    SetTurno(0, textoplayer2, textoplayer1);
                 }
                 TurnoCOM(cuadricula);
             }else {
-                SetTurno(0,tj2,tj1);
+                SetTurno(0, textoplayer2, textoplayer1);
             }
         }
     }
@@ -213,8 +213,8 @@ public class Controller {
     }
     private void Restart() {
         RefrescarMarcador(partida, WINPLAYER1, WINPLAYER2, LOSESPLAYER1, LOSESPLAYER2);
-        OcultarTurno(tj1);
-        OcultarTurno(tj2);
+        OcultarTurno(textoplayer1);
+        OcultarTurno(textoplayer2);
         MostrarBoton(button_empezar_partida);
         Limpiar();
     }
