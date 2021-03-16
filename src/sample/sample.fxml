@@ -18,7 +18,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="0.0" prefWidth="0.0">
+                <Button id="b0" fx:id="b0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="0.0" prefWidth="0.0">
                     <font>
                         <Font size="35.0" />
                     </font>
@@ -69,7 +69,7 @@
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                     <children>
-                        <TitledPane alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="-4.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="454.0" text="JUGADOR 1">
+                        <TitledPane alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="-4.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="454.0" text="PLAYER 1">
                             <content>
                                 <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="318.0" prefWidth="452.0">
                                     <children>
