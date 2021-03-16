@@ -18,7 +18,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Click" prefHeight="0.0" prefWidth="0.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                <Button id="b0" fx:id="b0" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Click" prefHeight="0.0" prefWidth="0.0">
                     <font>
                         <Font size="35.0" />
                     </font>
